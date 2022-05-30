@@ -29,195 +29,188 @@ namespace CRUD_Cliente_Teste
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtBoxNome = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btAdicionar = new System.Windows.Forms.Button();
-            this.btEditar = new System.Windows.Forms.Button();
-            this.btExcluir = new System.Windows.Forms.Button();
-            this.btConsultar = new System.Windows.Forms.Button();
-            this.btExibir = new System.Windows.Forms.Button();
-            this.dgvDados = new System.Windows.Forms.DataGridView();
-            this.btLimpar = new System.Windows.Forms.Button();
-            this.txtBoxNumero = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btMatriculas = new Guna.UI2.WinForms.Guna2Button();
+            this.btCursos = new Guna.UI2.WinForms.Guna2Button();
+            this.btAlunos = new Guna.UI2.WinForms.Guna2Button();
+            this.panelUserControl = new System.Windows.Forms.Panel();
+            this.btClose = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label2
+            // panel1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label2.Location = new System.Drawing.Point(15, 36);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nome:";
+            this.panel1.BackColor = System.Drawing.Color.Salmon;
+            this.panel1.Controls.Add(this.btClose);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(952, 57);
+            this.panel1.TabIndex = 5;
             // 
-            // txtBoxNome
+            // label1
             // 
-            this.txtBoxNome.Location = new System.Drawing.Point(77, 36);
-            this.txtBoxNome.Name = "txtBoxNome";
-            this.txtBoxNome.Size = new System.Drawing.Size(108, 20);
-            this.txtBoxNome.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(81, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 25);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "label1";
             // 
-            // label3
+            // pictureBox1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label3.Location = new System.Drawing.Point(0, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 21);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Numero:";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
-            // btAdicionar
+            // panel2
             // 
-            this.btAdicionar.Location = new System.Drawing.Point(11, 88);
-            this.btAdicionar.Name = "btAdicionar";
-            this.btAdicionar.Size = new System.Drawing.Size(64, 20);
-            this.btAdicionar.TabIndex = 2;
-            this.btAdicionar.Text = "Adicionar";
-            this.btAdicionar.UseVisualStyleBackColor = true;
-            this.btAdicionar.Click += new System.EventHandler(this.btAdicionar_Click);
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.btMatriculas);
+            this.panel2.Controls.Add(this.btCursos);
+            this.panel2.Controls.Add(this.btAlunos);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 57);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(952, 52);
+            this.panel2.TabIndex = 6;
             // 
-            // btEditar
+            // btMatriculas
             // 
-            this.btEditar.Enabled = false;
-            this.btEditar.Location = new System.Drawing.Point(81, 88);
-            this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(64, 20);
-            this.btEditar.TabIndex = 2;
-            this.btEditar.Text = "Editar";
-            this.btEditar.UseVisualStyleBackColor = true;
-            this.btEditar.Click += new System.EventHandler(this.btEditar_Click);
+            this.btMatriculas.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btMatriculas.CheckedState.CustomBorderColor = System.Drawing.Color.Salmon;
+            this.btMatriculas.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.btMatriculas.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btMatriculas.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btMatriculas.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btMatriculas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btMatriculas.FillColor = System.Drawing.Color.White;
+            this.btMatriculas.FocusedColor = System.Drawing.Color.Transparent;
+            this.btMatriculas.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btMatriculas.ForeColor = System.Drawing.Color.Black;
+            this.btMatriculas.HoverState.CustomBorderColor = System.Drawing.Color.Salmon;
+            this.btMatriculas.Location = new System.Drawing.Point(317, 4);
+            this.btMatriculas.Name = "btMatriculas";
+            this.btMatriculas.Size = new System.Drawing.Size(151, 45);
+            this.btMatriculas.TabIndex = 0;
+            this.btMatriculas.Text = "Matrículas";
+            this.btMatriculas.Click += new System.EventHandler(this.btMatriculas_Click);
             // 
-            // btExcluir
+            // btCursos
             // 
-            this.btExcluir.Enabled = false;
-            this.btExcluir.Location = new System.Drawing.Point(150, 88);
-            this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(64, 20);
-            this.btExcluir.TabIndex = 2;
-            this.btExcluir.Text = "Excluir";
-            this.btExcluir.UseVisualStyleBackColor = true;
-            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
+            this.btCursos.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btCursos.CheckedState.CustomBorderColor = System.Drawing.Color.Salmon;
+            this.btCursos.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.btCursos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btCursos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btCursos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btCursos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btCursos.FillColor = System.Drawing.Color.White;
+            this.btCursos.FocusedColor = System.Drawing.Color.Transparent;
+            this.btCursos.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btCursos.ForeColor = System.Drawing.Color.Black;
+            this.btCursos.HoverState.CustomBorderColor = System.Drawing.Color.Salmon;
+            this.btCursos.Location = new System.Drawing.Point(160, 4);
+            this.btCursos.Name = "btCursos";
+            this.btCursos.Size = new System.Drawing.Size(151, 45);
+            this.btCursos.TabIndex = 0;
+            this.btCursos.Text = "Cursos";
+            this.btCursos.Click += new System.EventHandler(this.btCursos_Click);
             // 
-            // btConsultar
+            // btAlunos
             // 
-            this.btConsultar.Location = new System.Drawing.Point(219, 88);
-            this.btConsultar.Name = "btConsultar";
-            this.btConsultar.Size = new System.Drawing.Size(64, 20);
-            this.btConsultar.TabIndex = 2;
-            this.btConsultar.Text = "Consultar";
-            this.btConsultar.UseVisualStyleBackColor = true;
-            this.btConsultar.Click += new System.EventHandler(this.btConsultar_Click);
+            this.btAlunos.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btAlunos.Checked = true;
+            this.btAlunos.CheckedState.CustomBorderColor = System.Drawing.Color.Salmon;
+            this.btAlunos.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btAlunos.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.btAlunos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btAlunos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btAlunos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btAlunos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btAlunos.FillColor = System.Drawing.Color.White;
+            this.btAlunos.FocusedColor = System.Drawing.Color.Transparent;
+            this.btAlunos.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btAlunos.ForeColor = System.Drawing.Color.Black;
+            this.btAlunos.HoverState.CustomBorderColor = System.Drawing.Color.Salmon;
+            this.btAlunos.Location = new System.Drawing.Point(3, 3);
+            this.btAlunos.Name = "btAlunos";
+            this.btAlunos.Size = new System.Drawing.Size(151, 45);
+            this.btAlunos.TabIndex = 0;
+            this.btAlunos.Text = "Alunos";
+            this.btAlunos.Click += new System.EventHandler(this.btAlunos_Click);
             // 
-            // btExibir
+            // panelUserControl
             // 
-            this.btExibir.Location = new System.Drawing.Point(289, 88);
-            this.btExibir.Name = "btExibir";
-            this.btExibir.Size = new System.Drawing.Size(64, 20);
-            this.btExibir.TabIndex = 2;
-            this.btExibir.Text = "Exibir";
-            this.btExibir.UseVisualStyleBackColor = true;
-            this.btExibir.Click += new System.EventHandler(this.btExibir_Click);
+            this.panelUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelUserControl.Location = new System.Drawing.Point(0, 109);
+            this.panelUserControl.Name = "panelUserControl";
+            this.panelUserControl.Size = new System.Drawing.Size(952, 363);
+            this.panelUserControl.TabIndex = 7;
             // 
-            // dgvDados
+            // btClose
             // 
-            this.dgvDados.AllowUserToAddRows = false;
-            this.dgvDados.AllowUserToDeleteRows = false;
-            this.dgvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDados.Location = new System.Drawing.Point(11, 113);
-            this.dgvDados.Name = "dgvDados";
-            this.dgvDados.ReadOnly = true;
-            this.dgvDados.RowHeadersWidth = 40;
-            this.dgvDados.RowTemplate.Height = 25;
-            this.dgvDados.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvDados.Size = new System.Drawing.Size(342, 150);
-            this.dgvDados.TabIndex = 3;
-            // 
-            // btLimpar
-            // 
-            this.btLimpar.Location = new System.Drawing.Point(191, 38);
-            this.btLimpar.Name = "btLimpar";
-            this.btLimpar.Size = new System.Drawing.Size(64, 20);
-            this.btLimpar.TabIndex = 2;
-            this.btLimpar.Text = "Limpar";
-            this.btLimpar.UseVisualStyleBackColor = true;
-            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
-            // 
-            // txtBoxNumero
-            // 
-            this.txtBoxNumero.Location = new System.Drawing.Point(77, 61);
-            this.txtBoxNumero.Name = "txtBoxNumero";
-            this.txtBoxNumero.Size = new System.Drawing.Size(108, 20);
-            this.txtBoxNumero.TabIndex = 1;
-            this.txtBoxNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNumero_KeyPress);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(41, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Id:";
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(77, 12);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(108, 20);
-            this.txtId.TabIndex = 1;
+            this.btClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btClose.FillColor = System.Drawing.Color.Black;
+            this.btClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btClose.ForeColor = System.Drawing.Color.White;
+            this.btClose.Location = new System.Drawing.Point(910, 12);
+            this.btClose.Name = "btClose";
+            this.btClose.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btClose.Size = new System.Drawing.Size(30, 30);
+            this.btClose.TabIndex = 9;
+            this.btClose.Text = "X";
+            this.btClose.Click += new System.EventHandler(this.btClose_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(367, 279);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.dgvDados);
-            this.Controls.Add(this.btLimpar);
-            this.Controls.Add(this.btExibir);
-            this.Controls.Add(this.btConsultar);
-            this.Controls.Add(this.btExcluir);
-            this.Controls.Add(this.btEditar);
-            this.Controls.Add(this.btAdicionar);
-            this.Controls.Add(this.txtBoxNumero);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtId);
-            this.Controls.Add(this.txtBoxNome);
-            this.Controls.Add(this.label2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.ClientSize = new System.Drawing.Size(952, 472);
+            this.Controls.Add(this.panelUserControl);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CRUD Cliente";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtBoxNome;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btAdicionar;
-        private System.Windows.Forms.Button btEditar;
-        private System.Windows.Forms.Button btExcluir;
-        private System.Windows.Forms.Button btConsultar;
-        private System.Windows.Forms.Button btExibir;
-        private System.Windows.Forms.DataGridView dgvDados;
-        private System.Windows.Forms.Button btLimpar;
-        private System.Windows.Forms.TextBox txtBoxNumero;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button btMatriculas;
+        private Guna.UI2.WinForms.Guna2Button btCursos;
+        private Guna.UI2.WinForms.Guna2Button btAlunos;
+        private System.Windows.Forms.Panel panelUserControl;
+        private Guna.UI2.WinForms.Guna2CircleButton btClose;
     }
 }
 
