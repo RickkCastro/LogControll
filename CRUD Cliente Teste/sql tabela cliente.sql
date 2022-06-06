@@ -1,14 +1,19 @@
-CREATE SCHEMA `crud_cliente_c#` ;
+CREATE database `crud_LogControll`;
+use crud_LogControll;
 
-CREATE TABLE `crud_cliente_c#`.`tb_cliente` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `nome` VARCHAR(45) NOT NULL,
-  `numero` VARCHAR(45) NOT NULL,
+CREATE TABLE `crud_LogControll`.`tb_cliente` (
+  `id` INT auto_increment,
+  `nome` VARCHAR(45) NOT NULL DEFAULT 'No name',
+  `numero` VARCHAR(45) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`));
-  
-ALTER TABLE `crud_cliente_c#`.`tb_cliente` 
-CHANGE COLUMN `nome` `nome` VARCHAR(45) NOT NULL DEFAULT 'No name' ,
-CHANGE COLUMN `numero` `numero` VARCHAR(45) NOT NULL DEFAULT 0 ;
 
 SELECT AUTO_INCREMENT FROM information_schema.tables
 WHERE table_name = 'tb_cliente';
+
+select * from tb_cliente;
+
+select auto_increment from information_schema.tables where table_name = 'tb_cliente' and table_schema = 'crud_LogControll';
+
+SHOW TABLE STATUS LIKE 'tb_cliente';
+
+INSERT INTO tb_cliente (`nome`, `numero`) VALUES ('rickkk', 5);

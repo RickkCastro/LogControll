@@ -38,9 +38,9 @@
             this.btAdicionar = new System.Windows.Forms.Button();
             this.txtBoxNumero = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.txtBoxNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +67,7 @@
             this.dgvDados.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvDados.Size = new System.Drawing.Size(906, 227);
             this.dgvDados.TabIndex = 19;
+            this.dgvDados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDados_CellClick);
             // 
             // btLimpar
             // 
@@ -148,13 +149,6 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Numero:";
             // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(88, 17);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(108, 20);
-            this.txtId.TabIndex = 11;
-            // 
             // txtBoxNome
             // 
             this.txtBoxNome.Location = new System.Drawing.Point(88, 41);
@@ -172,10 +166,21 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Nome:";
             // 
+            // txtId
+            // 
+            this.txtId.AutoSize = true;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(84, 15);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(19, 20);
+            this.txtId.TabIndex = 20;
+            this.txtId.Text = "0";
+            // 
             // TelaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvDados);
             this.Controls.Add(this.btLimpar);
@@ -186,7 +191,6 @@
             this.Controls.Add(this.btAdicionar);
             this.Controls.Add(this.txtBoxNumero);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtBoxNome);
             this.Controls.Add(this.label2);
             this.Name = "TelaCliente";
@@ -210,8 +214,8 @@
         private System.Windows.Forms.Button btAdicionar;
         private System.Windows.Forms.TextBox txtBoxNumero;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtBoxNome;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label txtId;
     }
 }

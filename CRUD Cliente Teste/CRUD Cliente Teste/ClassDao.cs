@@ -27,7 +27,7 @@ namespace CRUD_Cliente_Teste
 
         //Dados do bd
         public string usuarioBD = "root";
-        public string senhaBd = "ninjah12";
+        public string senhaBd = "admin";
         public string servidor = "localhost";
         string bancoDados;
         string tabela;
@@ -137,13 +137,21 @@ namespace CRUD_Cliente_Teste
         {
             Abrir();
             //Max retorna o num do ultimo valor do id
-            MySqlCommand comando = new MySqlCommand("SELECT AUTO_INCREMENT FROM information_schema.tables WHERE table_name = '" + tabela + "';", minhaConexao);
+            MySqlCommand comando = new MySqlCommand("select auto_increment from information_schema.tables where table_name = '" + tabela + "' and table_schema = '" + bancoDados + "';", minhaConexao);
 
             //ExecuteScalar retorna um dado do tipo object, é preciso converter para string
             string n = comando.ExecuteScalar().ToString();
 
             //Agora convertemos o dado para int e somamos um para obter o numero do proximo registro
-            int num = int.Parse(n) + 1;
+            int num;
+            if (n != "1")
+            {
+                num = int.Parse(n) + 1;
+            }
+            else
+            {
+                num = int.Parse(n);
+            }
 
             Fechar();
 

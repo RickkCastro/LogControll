@@ -32,7 +32,7 @@ namespace CRUD_Cliente_Teste.UserControls
         {
             try
             {
-                dao.conecte("crud_cliente_c#", tabela);
+                dao.conecte("crud_LogControll", tabela);
                 dao.PreencherTabela(dgvDados);
                 LimparCampos();
             }
@@ -175,6 +175,36 @@ namespace CRUD_Cliente_Teste.UserControls
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
             {
                 e.Handled = true;
+            }
+        }
+
+        private void dgvDados_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                var row = dgvDados.CurrentRow;
+
+                string txtIdCell = row.Cells[0].ToString();
+                string txtNomeCell = row.Cells[1].ToString();
+                string txtNumeroCell = row.Cells[2].ToString();
+
+                dao.ConsultaClienteNome(txtIdCell , txtNomeCell, txtNumeroCell);
+
+                txtId.Text = dao.camposCliente.id.ToString();
+                txtBoxNome.Text = dao.camposCliente.nome;
+                txtBoxNumero.Text = dao.camposCliente.numero.ToString();
+
+                dao.CamposClienteClear();
+
+                MessageBox.Show("Dados encontrados", "Suscesso!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                btAdicionar.Enabled = false;
+                btEditar.Enabled = true;
+                btExcluir.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }
