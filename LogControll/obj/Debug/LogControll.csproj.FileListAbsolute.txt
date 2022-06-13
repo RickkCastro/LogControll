@@ -1,0 +1,10 @@
+U:\LogControll-V.0.1.0\LogControll\bin\Debug\LogControll.exe.config
+U:\LogControll-V.0.1.0\LogControll\bin\Debug\LogControll.exe
+U:\LogControll-V.0.1.0\LogControll\bin\Debug\LogControll.pdb
+U:\LogControll-V.0.1.0\LogControll\obj\Debug\LogControll.csprojAssemblyReference.cache
+U:\LogControll-V.0.1.0\LogControll\obj\Debug\LogControll.Form1.resources
+U:\LogControll-V.0.1.0\LogControll\obj\Debug\LogControll.Properties.Resources.resources
+U:\LogControll-V.0.1.0\LogControll\obj\Debug\LogControll.csproj.GenerateResource.cache
+U:\LogControll-V.0.1.0\LogControll\obj\Debug\LogControll.csproj.CoreCompileInputs.cache
+U:\LogControll-V.0.1.0\LogControll\obj\Debug\LogControll.exe
+U:\LogControll-V.0.1.0\LogControll\obj\Debug\LogControll.pdb
