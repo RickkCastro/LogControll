@@ -36,9 +36,6 @@
             this.btExcluir = new Guna.UI2.WinForms.Guna2Button();
             this.btAdicionar = new Guna.UI2.WinForms.Guna2Button();
             this.btLimpar = new Guna.UI2.WinForms.Guna2Button();
-            this.btPesquisar = new Guna.UI2.WinForms.Guna2Button();
-            this.txtBoxPesquisa = new System.Windows.Forms.TextBox();
-            this.cBoxPesquisa = new System.Windows.Forms.ComboBox();
             this.txtBoxEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBoxNome = new System.Windows.Forms.TextBox();
@@ -46,10 +43,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtIdade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -58,6 +56,9 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.Controls.Add(this.label7);
+            this.guna2GradientPanel1.Controls.Add(this.dataGridView1);
+            this.guna2GradientPanel1.Controls.Add(this.guna2Button1);
             this.guna2GradientPanel1.Controls.Add(this.listBoxPreferencias);
             this.guna2GradientPanel1.Controls.Add(this.rBtSexoM);
             this.guna2GradientPanel1.Controls.Add(this.rBtSexoF);
@@ -65,9 +66,6 @@
             this.guna2GradientPanel1.Controls.Add(this.btExcluir);
             this.guna2GradientPanel1.Controls.Add(this.btAdicionar);
             this.guna2GradientPanel1.Controls.Add(this.btLimpar);
-            this.guna2GradientPanel1.Controls.Add(this.btPesquisar);
-            this.guna2GradientPanel1.Controls.Add(this.txtBoxPesquisa);
-            this.guna2GradientPanel1.Controls.Add(this.cBoxPesquisa);
             this.guna2GradientPanel1.Controls.Add(this.txtBoxEmail);
             this.guna2GradientPanel1.Controls.Add(this.label4);
             this.guna2GradientPanel1.Controls.Add(this.txtBoxNome);
@@ -75,10 +73,8 @@
             this.guna2GradientPanel1.Controls.Add(this.label3);
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.Controls.Add(this.txtID);
-            this.guna2GradientPanel1.Controls.Add(this.label7);
             this.guna2GradientPanel1.Controls.Add(this.label5);
             this.guna2GradientPanel1.Controls.Add(this.label1);
-            this.guna2GradientPanel1.Controls.Add(this.dataGridView1);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.DeepSkyBlue;
@@ -179,58 +175,11 @@
             this.btLimpar.FillColor = System.Drawing.SystemColors.Control;
             this.btLimpar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLimpar.ForeColor = System.Drawing.Color.Black;
-            this.btLimpar.Location = new System.Drawing.Point(202, 144);
+            this.btLimpar.Location = new System.Drawing.Point(292, 144);
             this.btLimpar.Name = "btLimpar";
             this.btLimpar.Size = new System.Drawing.Size(84, 27);
             this.btLimpar.TabIndex = 5;
             this.btLimpar.Text = "Limpar";
-            // 
-            // btPesquisar
-            // 
-            this.btPesquisar.BorderColor = System.Drawing.Color.Gray;
-            this.btPesquisar.BorderThickness = 1;
-            this.btPesquisar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btPesquisar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btPesquisar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btPesquisar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btPesquisar.FillColor = System.Drawing.SystemColors.Control;
-            this.btPesquisar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btPesquisar.ForeColor = System.Drawing.Color.Black;
-            this.btPesquisar.Location = new System.Drawing.Point(847, 19);
-            this.btPesquisar.Name = "btPesquisar";
-            this.btPesquisar.Size = new System.Drawing.Size(84, 27);
-            this.btPesquisar.TabIndex = 5;
-            this.btPesquisar.Text = "Pesquisar";
-            // 
-            // txtBoxPesquisa
-            // 
-            this.txtBoxPesquisa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxPesquisa.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxPesquisa.Location = new System.Drawing.Point(548, 19);
-            this.txtBoxPesquisa.Name = "txtBoxPesquisa";
-            this.txtBoxPesquisa.Size = new System.Drawing.Size(293, 26);
-            this.txtBoxPesquisa.TabIndex = 4;
-            // 
-            // cBoxPesquisa
-            // 
-            this.cBoxPesquisa.AutoCompleteCustomSource.AddRange(new string[] {
-            "Id",
-            "Nome",
-            "Tipo",
-            "Data de início",
-            "Data de término"});
-            this.cBoxPesquisa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cBoxPesquisa.FormattingEnabled = true;
-            this.cBoxPesquisa.Items.AddRange(new object[] {
-            "Id",
-            "Nome",
-            "Idade",
-            "Email",
-            "Sexo"});
-            this.cBoxPesquisa.Location = new System.Drawing.Point(423, 18);
-            this.cBoxPesquisa.Name = "cBoxPesquisa";
-            this.cBoxPesquisa.Size = new System.Drawing.Size(119, 28);
-            this.cBoxPesquisa.TabIndex = 3;
             // 
             // txtBoxEmail
             // 
@@ -298,16 +247,6 @@
             this.txtID.TabIndex = 1;
             this.txtID.Text = "0";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(261, 14);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(156, 32);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Pesquisar:";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -328,6 +267,23 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nome:";
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderColor = System.Drawing.Color.Gray;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.SystemColors.Control;
+            this.guna2Button1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Location = new System.Drawing.Point(202, 144);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(84, 27);
+            this.guna2Button1.TabIndex = 9;
+            this.guna2Button1.Text = "Editar";
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -335,12 +291,25 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(22, 177);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(909, 157);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridView1.Size = new System.Drawing.Size(909, 170);
+            this.dataGridView1.TabIndex = 10;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(498, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(433, 24);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Clique 2x Vezes nos dados para consultar";
             // 
             // TelaAlunos
             // 
@@ -362,9 +331,6 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private Guna.UI2.WinForms.Guna2Button btPesquisar;
-        private System.Windows.Forms.TextBox txtBoxPesquisa;
-        private System.Windows.Forms.ComboBox cBoxPesquisa;
         private System.Windows.Forms.TextBox txtBoxEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtBoxNome;
@@ -373,8 +339,6 @@
         private System.Windows.Forms.Label txtID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2Button btExcluir;
         private Guna.UI2.WinForms.Guna2Button btAdicionar;
         private Guna.UI2.WinForms.Guna2Button btLimpar;
@@ -383,5 +347,8 @@
         private System.Windows.Forms.NumericUpDown txtIdade;
         private System.Windows.Forms.CheckedListBox listBoxPreferencias;
         private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label7;
     }
 }

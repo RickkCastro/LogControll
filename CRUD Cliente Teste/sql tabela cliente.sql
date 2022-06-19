@@ -2,7 +2,7 @@ CREATE database `crud_LogControll`;
 use crud_LogControll;
 
 CREATE TABLE `crud_LogControll`.`tb_cliente` (
-  `id` INT auto_increment,
+  `id` INT UNIQUE AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL DEFAULT 'No name',
   `numero` VARCHAR(45) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`));
