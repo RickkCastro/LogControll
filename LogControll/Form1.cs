@@ -27,7 +27,7 @@ namespace LogControll
         }
         private void btAlunos_Click(object sender, EventArgs e)
         {
-            TelaCliente telaCliente = new TelaCliente();
+            TelaAlunos telaCliente = new TelaAlunos();
             addUserControl(telaCliente);
         }
 

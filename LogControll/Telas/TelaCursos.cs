@@ -16,5 +16,10 @@ namespace LogControll.Telas
         {
             InitializeComponent();
         }
+
+        private void TelaCursos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
