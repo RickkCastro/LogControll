@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.listBoxPreferencias = new System.Windows.Forms.CheckedListBox();
+            this.rBtSexoM = new System.Windows.Forms.RadioButton();
+            this.rBtSexoF = new System.Windows.Forms.RadioButton();
+            this.txtIdade = new System.Windows.Forms.NumericUpDown();
             this.btExcluir = new Guna.UI2.WinForms.Guna2Button();
             this.btAdicionar = new Guna.UI2.WinForms.Guna2Button();
             this.btLimpar = new Guna.UI2.WinForms.Guna2Button();
             this.btPesquisar = new Guna.UI2.WinForms.Guna2Button();
             this.txtBoxPesquisa = new System.Windows.Forms.TextBox();
             this.cBoxPesquisa = new System.Windows.Forms.ComboBox();
-            this.txtBoxDataI = new System.Windows.Forms.TextBox();
+            this.txtBoxEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBoxNome = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,24 +51,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIdade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.Controls.Add(this.checkedListBox1);
-            this.guna2GradientPanel1.Controls.Add(this.radioButton2);
-            this.guna2GradientPanel1.Controls.Add(this.radioButton1);
-            this.guna2GradientPanel1.Controls.Add(this.numericUpDown1);
+            this.guna2GradientPanel1.Controls.Add(this.listBoxPreferencias);
+            this.guna2GradientPanel1.Controls.Add(this.rBtSexoM);
+            this.guna2GradientPanel1.Controls.Add(this.rBtSexoF);
+            this.guna2GradientPanel1.Controls.Add(this.txtIdade);
             this.guna2GradientPanel1.Controls.Add(this.btExcluir);
             this.guna2GradientPanel1.Controls.Add(this.btAdicionar);
             this.guna2GradientPanel1.Controls.Add(this.btLimpar);
             this.guna2GradientPanel1.Controls.Add(this.btPesquisar);
             this.guna2GradientPanel1.Controls.Add(this.txtBoxPesquisa);
             this.guna2GradientPanel1.Controls.Add(this.cBoxPesquisa);
-            this.guna2GradientPanel1.Controls.Add(this.txtBoxDataI);
+            this.guna2GradientPanel1.Controls.Add(this.txtBoxEmail);
             this.guna2GradientPanel1.Controls.Add(this.label4);
             this.guna2GradientPanel1.Controls.Add(this.txtBoxNome);
             this.guna2GradientPanel1.Controls.Add(this.label6);
@@ -89,10 +89,10 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(952, 363);
             this.guna2GradientPanel1.TabIndex = 15;
             // 
-            // checkedListBox1
+            // listBoxPreferencias
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.listBoxPreferencias.FormattingEnabled = true;
+            this.listBoxPreferencias.Items.AddRange(new object[] {
             "Artes",
             "Tecnologia",
             "Animais",
@@ -100,39 +100,39 @@
             "Comunicação",
             "Culinaria",
             "Meio Ambiente"});
-            this.checkedListBox1.Location = new System.Drawing.Point(467, 87);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(145, 84);
-            this.checkedListBox1.TabIndex = 8;
+            this.listBoxPreferencias.Location = new System.Drawing.Point(581, 87);
+            this.listBoxPreferencias.Name = "listBoxPreferencias";
+            this.listBoxPreferencias.Size = new System.Drawing.Size(350, 84);
+            this.listBoxPreferencias.TabIndex = 8;
             // 
-            // radioButton2
+            // rBtSexoM
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(345, 99);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(38, 24);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "M";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rBtSexoM.AutoSize = true;
+            this.rBtSexoM.Location = new System.Drawing.Point(382, 99);
+            this.rBtSexoM.Name = "rBtSexoM";
+            this.rBtSexoM.Size = new System.Drawing.Size(38, 24);
+            this.rBtSexoM.TabIndex = 7;
+            this.rBtSexoM.TabStop = true;
+            this.rBtSexoM.Text = "M";
+            this.rBtSexoM.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rBtSexoF
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(304, 99);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(35, 24);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "F";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rBtSexoF.AutoSize = true;
+            this.rBtSexoF.Location = new System.Drawing.Point(341, 99);
+            this.rBtSexoF.Name = "rBtSexoF";
+            this.rBtSexoF.Size = new System.Drawing.Size(35, 24);
+            this.rBtSexoF.TabIndex = 7;
+            this.rBtSexoF.TabStop = true;
+            this.rBtSexoF.Text = "F";
+            this.rBtSexoF.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown1
+            // txtIdade
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(85, 97);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(137, 25);
-            this.numericUpDown1.TabIndex = 6;
+            this.txtIdade.Location = new System.Drawing.Point(85, 97);
+            this.txtIdade.Name = "txtIdade";
+            this.txtIdade.Size = new System.Drawing.Size(176, 25);
+            this.txtIdade.TabIndex = 6;
             // 
             // btExcluir
             // 
@@ -232,19 +232,19 @@
             this.cBoxPesquisa.Size = new System.Drawing.Size(119, 28);
             this.cBoxPesquisa.TabIndex = 3;
             // 
-            // txtBoxDataI
+            // txtBoxEmail
             // 
-            this.txtBoxDataI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxDataI.Location = new System.Drawing.Point(304, 67);
-            this.txtBoxDataI.Name = "txtBoxDataI";
-            this.txtBoxDataI.Size = new System.Drawing.Size(146, 25);
-            this.txtBoxDataI.TabIndex = 2;
+            this.txtBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxEmail.Location = new System.Drawing.Point(345, 67);
+            this.txtBoxEmail.Name = "txtBoxEmail";
+            this.txtBoxEmail.Size = new System.Drawing.Size(215, 25);
+            this.txtBoxEmail.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(242, 97);
+            this.label4.Location = new System.Drawing.Point(279, 97);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 25);
             this.label4.TabIndex = 1;
@@ -255,14 +255,14 @@
             this.txtBoxNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxNome.Location = new System.Drawing.Point(85, 68);
             this.txtBoxNome.Name = "txtBoxNome";
-            this.txtBoxNome.Size = new System.Drawing.Size(137, 25);
+            this.txtBoxNome.Size = new System.Drawing.Size(176, 25);
             this.txtBoxNome.TabIndex = 2;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(462, 59);
+            this.label6.Location = new System.Drawing.Point(576, 59);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 25);
             this.label6.TabIndex = 1;
@@ -272,7 +272,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(242, 68);
+            this.label3.Location = new System.Drawing.Point(279, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 25);
             this.label3.TabIndex = 1;
@@ -339,7 +339,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(22, 177);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(909, 170);
+            this.dataGridView1.Size = new System.Drawing.Size(909, 157);
             this.dataGridView1.TabIndex = 0;
             // 
             // TelaAlunos
@@ -354,7 +354,7 @@
             this.Size = new System.Drawing.Size(952, 363);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIdade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -365,7 +365,7 @@
         private Guna.UI2.WinForms.Guna2Button btPesquisar;
         private System.Windows.Forms.TextBox txtBoxPesquisa;
         private System.Windows.Forms.ComboBox cBoxPesquisa;
-        private System.Windows.Forms.TextBox txtBoxDataI;
+        private System.Windows.Forms.TextBox txtBoxEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtBoxNome;
         private System.Windows.Forms.Label label3;
@@ -378,10 +378,10 @@
         private Guna.UI2.WinForms.Guna2Button btExcluir;
         private Guna.UI2.WinForms.Guna2Button btAdicionar;
         private Guna.UI2.WinForms.Guna2Button btLimpar;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.RadioButton rBtSexoM;
+        private System.Windows.Forms.RadioButton rBtSexoF;
+        private System.Windows.Forms.NumericUpDown txtIdade;
+        private System.Windows.Forms.CheckedListBox listBoxPreferencias;
         private System.Windows.Forms.Label label6;
     }
 }
