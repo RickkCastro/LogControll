@@ -10,12 +10,11 @@ CREATE TABLE `logcontroll`.`tb_cursos` (
   `ativo_curso` ENUM('1','0') DEFAULT '1',
   PRIMARY KEY (`id`));
 
-
-
-select * from logcontroll.tb_cursos;
-select id, nome, tipo, data_Inicio, data_Termino from  logcontroll.tb_cursos WHERE ativo_curso = '1';
-
-select coalesce( max( id), 0) + 1 from tb_cursos;
-  
-INSERT INTO `logcontroll`.`tb_cursos` (`nome_curso`, `tipo_curso`, `dataInicio_curso`, `dataTermino_curso`)
-VALUES ('Programacao', 'TI', '19/06/22', '19/06/23');
+CREATE TABLE `logcontroll`.`tb_alunos` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NOT NULL,
+  `idade` INT NULL,
+  `email` VARCHAR(85) NULL,
+  `sexo` ENUM('M', 'F') NULL,
+  `ativo_aluno` ENUM('1','0') DEFAULT '1',
+  PRIMARY KEY (`id`));

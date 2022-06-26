@@ -44,7 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDados = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +52,7 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.Controls.Add(this.label7);
             this.guna2GradientPanel1.Controls.Add(this.btExcluir);
             this.guna2GradientPanel1.Controls.Add(this.btEditar);
             this.guna2GradientPanel1.Controls.Add(this.btAdicionar);
@@ -64,7 +65,6 @@
             this.guna2GradientPanel1.Controls.Add(this.label3);
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.Controls.Add(this.txtID);
-            this.guna2GradientPanel1.Controls.Add(this.label6);
             this.guna2GradientPanel1.Controls.Add(this.label5);
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Controls.Add(this.dgvDados);
@@ -262,15 +262,15 @@
             this.dgvDados.TabIndex = 0;
             this.dgvDados.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDados_CellMouseClick);
             // 
-            // label6
+            // label7
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(498, 13);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(433, 24);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Clique 2x Vezes nos dados para consultar";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(593, 150);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(338, 24);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Clique nos dados para consultar";
             // 
             // TelaCursos
             // 
@@ -307,6 +307,6 @@
         private Guna.UI2.WinForms.Guna2Button btAdicionar;
         private Guna.UI2.WinForms.Guna2Button btLimpar;
         private Guna.UI2.WinForms.Guna2Button btEditar;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

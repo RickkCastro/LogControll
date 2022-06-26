@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.listBoxPreferencias = new System.Windows.Forms.CheckedListBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btEditar = new Guna.UI2.WinForms.Guna2Button();
             this.rBtSexoM = new System.Windows.Forms.RadioButton();
             this.rBtSexoF = new System.Windows.Forms.RadioButton();
             this.txtIdade = new System.Windows.Forms.NumericUpDown();
@@ -39,27 +40,23 @@
             this.txtBoxEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBoxNome = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
+            this.dgvDados = new System.Windows.Forms.DataGridView();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtIdade)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.Controls.Add(this.dgvDados);
             this.guna2GradientPanel1.Controls.Add(this.label7);
-            this.guna2GradientPanel1.Controls.Add(this.dataGridView1);
-            this.guna2GradientPanel1.Controls.Add(this.guna2Button1);
-            this.guna2GradientPanel1.Controls.Add(this.listBoxPreferencias);
+            this.guna2GradientPanel1.Controls.Add(this.btEditar);
             this.guna2GradientPanel1.Controls.Add(this.rBtSexoM);
             this.guna2GradientPanel1.Controls.Add(this.rBtSexoF);
             this.guna2GradientPanel1.Controls.Add(this.txtIdade);
@@ -69,7 +66,6 @@
             this.guna2GradientPanel1.Controls.Add(this.txtBoxEmail);
             this.guna2GradientPanel1.Controls.Add(this.label4);
             this.guna2GradientPanel1.Controls.Add(this.txtBoxNome);
-            this.guna2GradientPanel1.Controls.Add(this.label6);
             this.guna2GradientPanel1.Controls.Add(this.label3);
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.Controls.Add(this.txtID);
@@ -85,21 +81,33 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(952, 363);
             this.guna2GradientPanel1.TabIndex = 15;
             // 
-            // listBoxPreferencias
+            // label7
             // 
-            this.listBoxPreferencias.FormattingEnabled = true;
-            this.listBoxPreferencias.Items.AddRange(new object[] {
-            "Artes",
-            "Tecnologia",
-            "Animais",
-            "Internet",
-            "Comunicação",
-            "Culinaria",
-            "Meio Ambiente"});
-            this.listBoxPreferencias.Location = new System.Drawing.Point(581, 87);
-            this.listBoxPreferencias.Name = "listBoxPreferencias";
-            this.listBoxPreferencias.Size = new System.Drawing.Size(350, 84);
-            this.listBoxPreferencias.TabIndex = 8;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(593, 144);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(338, 24);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Clique nos dados para consultar";
+            // 
+            // btEditar
+            // 
+            this.btEditar.BorderColor = System.Drawing.Color.Gray;
+            this.btEditar.BorderThickness = 1;
+            this.btEditar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btEditar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btEditar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btEditar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btEditar.FillColor = System.Drawing.SystemColors.Control;
+            this.btEditar.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEditar.ForeColor = System.Drawing.Color.Black;
+            this.btEditar.Location = new System.Drawing.Point(202, 144);
+            this.btEditar.Name = "btEditar";
+            this.btEditar.Size = new System.Drawing.Size(84, 27);
+            this.btEditar.TabIndex = 9;
+            this.btEditar.Text = "Editar";
+            this.btEditar.Click += new System.EventHandler(this.btEditar_Click);
             // 
             // rBtSexoM
             // 
@@ -146,6 +154,7 @@
             this.btExcluir.Size = new System.Drawing.Size(84, 27);
             this.btExcluir.TabIndex = 5;
             this.btExcluir.Text = "Excluir";
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btAdicionar
             // 
@@ -163,6 +172,7 @@
             this.btAdicionar.Size = new System.Drawing.Size(84, 27);
             this.btAdicionar.TabIndex = 5;
             this.btAdicionar.Text = "Adicionar";
+            this.btAdicionar.Click += new System.EventHandler(this.btAdicionar_Click);
             // 
             // btLimpar
             // 
@@ -180,6 +190,7 @@
             this.btLimpar.Size = new System.Drawing.Size(84, 27);
             this.btLimpar.TabIndex = 5;
             this.btLimpar.Text = "Limpar";
+            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
             // 
             // txtBoxEmail
             // 
@@ -206,16 +217,6 @@
             this.txtBoxNome.Name = "txtBoxNome";
             this.txtBoxNome.Size = new System.Drawing.Size(176, 25);
             this.txtBoxNome.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(576, 59);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 25);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Preferencias:";
             // 
             // label3
             // 
@@ -267,49 +268,25 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nome:";
             // 
-            // guna2Button1
+            // dgvDados
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.SystemColors.Control;
-            this.guna2Button1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(202, 144);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(84, 27);
-            this.guna2Button1.TabIndex = 9;
-            this.guna2Button1.Text = "Editar";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvDados.AllowUserToAddRows = false;
+            this.dgvDados.AllowUserToDeleteRows = false;
+            this.dgvDados.AllowUserToResizeColumns = false;
+            this.dgvDados.AllowUserToResizeRows = false;
+            this.dgvDados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 177);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridView1.Size = new System.Drawing.Size(909, 170);
-            this.dataGridView1.TabIndex = 10;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(498, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(433, 24);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Clique 2x Vezes nos dados para consultar";
+            this.dgvDados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDados.Location = new System.Drawing.Point(22, 177);
+            this.dgvDados.MultiSelect = false;
+            this.dgvDados.Name = "dgvDados";
+            this.dgvDados.ReadOnly = true;
+            this.dgvDados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvDados.Size = new System.Drawing.Size(909, 170);
+            this.dgvDados.TabIndex = 12;
+            this.dgvDados.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDados_CellMouseClick);
             // 
             // TelaAlunos
             // 
@@ -321,10 +298,11 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TelaAlunos";
             this.Size = new System.Drawing.Size(952, 363);
+            this.Load += new System.EventHandler(this.TelaAlunos_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtIdade)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -345,10 +323,8 @@
         private System.Windows.Forms.RadioButton rBtSexoM;
         private System.Windows.Forms.RadioButton rBtSexoF;
         private System.Windows.Forms.NumericUpDown txtIdade;
-        private System.Windows.Forms.CheckedListBox listBoxPreferencias;
-        private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private Guna.UI2.WinForms.Guna2Button btEditar;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dgvDados;
     }
 }
