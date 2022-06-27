@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label7 = new System.Windows.Forms.Label();
             this.btExcluir = new Guna.UI2.WinForms.Guna2Button();
             this.btEditar = new Guna.UI2.WinForms.Guna2Button();
             this.btAdicionar = new Guna.UI2.WinForms.Guna2Button();
@@ -44,7 +45,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDados = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.SuspendLayout();
@@ -77,6 +77,16 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(952, 363);
             this.guna2GradientPanel1.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(593, 150);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(338, 24);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Clique nos dados para consultar";
             // 
             // btExcluir
             // 
@@ -143,7 +153,7 @@
             this.btLimpar.FillColor = System.Drawing.SystemColors.Control;
             this.btLimpar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLimpar.ForeColor = System.Drawing.Color.Black;
-            this.btLimpar.Location = new System.Drawing.Point(674, 80);
+            this.btLimpar.Location = new System.Drawing.Point(292, 144);
             this.btLimpar.Name = "btLimpar";
             this.btLimpar.Size = new System.Drawing.Size(84, 27);
             this.btLimpar.TabIndex = 5;
@@ -261,16 +271,6 @@
             this.dgvDados.Size = new System.Drawing.Size(909, 170);
             this.dgvDados.TabIndex = 0;
             this.dgvDados.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDados_CellMouseClick);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(593, 150);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(338, 24);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Clique nos dados para consultar";
             // 
             // TelaCursos
             // 

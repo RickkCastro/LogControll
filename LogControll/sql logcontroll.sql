@@ -18,3 +18,10 @@ CREATE TABLE `logcontroll`.`tb_alunos` (
   `sexo` ENUM('M', 'F') NULL,
   `ativo_aluno` ENUM('1','0') DEFAULT '1',
   PRIMARY KEY (`id`));
+  
+CREATE TABLE `logcontroll`.`tb_matriculas` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome_aluno` VARCHAR(45) NULL,
+  `nome_curso` VARCHAR(45) NULL,
+  `ativo_matricula` ENUM('1','0') DEFAULT '1',
+  PRIMARY KEY (`id`));
